@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
+import LeftSidebar from '../components/LeftSidebar';
+import RightSidebar from '../components/RightSidebar';
+import Feed from '../components/Feed';
 import Login from '../components/Login';
 import { getSession } from 'next-auth/react';
 
@@ -20,9 +22,11 @@ export default function Home({ session }) {
       <Header />
       <main className='flex bg-gray-100'>
         {/* Left Sidebar */}
-        <Sidebar />
+        <LeftSidebar />
         {/* Feed (Create Post and Posts) */}
+        <Feed />
         {/* Right Sidebar */}
+        <RightSidebar />
       </main>
     </div>
   )
