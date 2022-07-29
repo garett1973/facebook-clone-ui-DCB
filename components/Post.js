@@ -17,7 +17,7 @@ const Post = () => {
           height={40}/>
           <div>
             <p className='font-medium'>Virgis Chsanavicius</p>
-            <p className='text-xs text-gray-500'>{new Date().toLocaleString()}</p>
+            <p className='text-xs text-gray-500' suppressHydrationWarning>{new Date().toUTCString()}</p>
           </div>
         </div>
         <p className='py-4'>Lorem ipsum bla bla bla</p>
@@ -25,6 +25,7 @@ const Post = () => {
           <Image
           className='absolute inset-0 object-cover'
           src='https://images.unsplash.com/photo-1658828056090-6be8de901f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80'
+          priority={true}
           alt='post'
           layout='fill'
           />
