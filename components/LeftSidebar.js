@@ -10,8 +10,7 @@ import { useSession } from 'next-auth/react';
 
 const LeftSidebar = () => {
   const {data: session} = useSession();
-
-
+  
   return (
     <div className='hidden lg:inline-flex flex-col py-2 px-2 max-w-xl lg:min-w-[302px]'>
         <div className='flex items-center space-x-2 py-3 pl-4 hover:bg-gray-200 rounded-l-xl cursor-pointer'>
